@@ -3,12 +3,13 @@ const {
 } = require('../model');
 // Simulando uma resposta assincrona de um banco por exemplo 
 class Connector {
-  // obtencao dos dados de uma fonte
   static get() {
     return new Promise(_ => _([{
-      id: 1
+      id: 1,
+      name: 'Livro 1'
     }, {
-      id: 2
+      id: 2,
+      name: 'Livro 2'
     }]));
   }
 }
